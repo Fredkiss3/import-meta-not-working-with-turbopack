@@ -4,7 +4,13 @@ export default function Home() {
     return (
         <>
             <h1>Meta:</h1>
-            <pre>{JSON.stringify({ meta: import.meta.url }, null, 2)}</pre>
+            <pre>
+                {JSON.stringify(
+                    { "import.meta.url": import.meta.url },
+                    null,
+                    2
+                )}
+            </pre>
         </>
     );
 }
